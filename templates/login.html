@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login page</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/hh.css')}}"/>
+
+    <style>
+        body{
+            background-image: url("{{url_for('static',filename='image/git.jpg')}}");
+        }
+
+    </style>
+</head>
+ <body>
+    <form method="post">
+        <div class="hd"><h1>GITHUB PROFILE ANALYZER</h1></div>
+       <div class="form-box">
+         <h1>SIGN IN WITH GITHUB ACCOUNT</h1>
+            <div class="input-box">
+             <input type="text" name="nm" placeholder="USER NAME">
+            </div>
+            <div class="input-box">
+             <input type="password" name="password" placeholder="ENTER YOUR PASSWORD">
+            </div>
+          <center>
+             <input class='btn' type="submit" value="submit">
+          </center>
+      </div>
+    </form>
+ <div align="center"><font color="red">{{error}}</font></div>
+ </body>
+</html>

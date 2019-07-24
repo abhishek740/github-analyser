@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home</title>
+	 <link rel="stylesheet" href="{{url_for('static',filename='css/ps.css')}}"/>
+    <style>
+        body{
+            background-image: url("{{url_for('static',filename='image/new.png')}}");
+            background-repeat:no repeat;
+            background-size: 100% 100%;
+        }
+
+    </style>
+</head>
+<body>
+        <!-- HEADER -->
+        <div class="hd">
+            <marquee behavior="alternate" direction="left" speep="9"><h1>GITHUB &nbsp; ANALYZER</h1></marquee>
+        </div>
+        <!-- SECTION -->
+
+		<center><b><h1>GitHub Profile Analyser Web-Application</h1></b></center><br>
+		<b><h1 style="margin: 1%;">What will our web app do : </h1></b></div>
+		<div class="ch">
+				<ul>
+				<li>As the name suggests, our web app analyses the user’s GitHub profile.</li>
+				<li>After analysing the user’s github profile, it gives important details about the user’s
+				repositories, such as how many forks, clones have been made on each repository.</li>
+				<li> Apart from that, it also shows how many people (unique and total) have visited the user’srepositories.</li>
+				</ul>
+		</div>
+		<!-- <div class="ac"> -->
+			<b><h1 style="font-size: 30px; ">Why do we need GitHub Profile Analyser?</h1></b>
+		<div class="dh">
+			<p>
+				The GitHub Profile Analyser informs the user about the number of people visiting his/herrepositories, which helps him/her in recognising the popularity of a repository.<br> This helps theuser in deciding or setting up the priorities among these, as repositories that are more popularrequire more attention.<br>
+				The profile analyser also tells how many forks and clones have been	made since the user has made a particular repository.<br>
+			    This helps the user in understanding theneed of the project among the developers.
+			</p>
+		</div>
+		<!-- </div> -->
+		<center>
+		 	<div class="btn">
+				<a href="/main">Your Result</a>
+			</div>
+		</center>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            &copy; 2019 Abhishek
+        </div>
+</body>
+</html>

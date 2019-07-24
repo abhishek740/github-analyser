@@ -1,0 +1,43 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.hd,
+.footer{
+	box-shadow: 0 0 10px 2px #000;
+	background-color: black;
+	color: white;
+	height: 100px;
+	padding:25px 0;
+	font-size: 20px;
+	text-align: center;
+}
+.ch{
+	font-size: 25px;
+	margin: 2%;
+}
+.dh{
+	font-size: 25px;
+	margin: 1%;
+}
+
+.btn{
+  background-color:red;
+  border: 1px solid white;
+  color: white;
+  padding: 32px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+
+}
+.footer{
+	box-shadow: none;
+	height:auto;
+	padding:20px 0;
+}

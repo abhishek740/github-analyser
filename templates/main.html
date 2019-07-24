@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>nav bar</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/ms.css')}}"/>
+     <style>
+        body{
+            background-image: url("{{url_for('static',filename='image/download.jpg')}}");
+        }
+    </style>
+</head>
+<body>
+	<div id="ab">
+		<nav>
+			<ul>
+				<h1>GitHub Profile Analyser</h1>
+				<li><a href="graph">GRAPH</a></li>
+				<li><a href="logout">LOGOUT</a></li>
+			</ul>
+		</nav>
+				<table border="1px" cellpadding="3px" cellspacing="2" id="tab">
+				  <tr>
+				    <th>NO</th>
+				    <th>Rapo Name</th>
+				    <th>Forks</th>
+				    <th>Watchers</th>
+				    <th>Stars</th>
+					<th>size(in kb)</th>
+
+				  </tr>
+				<tr>
+					<td>
+						{%for i in range(1,count)%}
+						<div style="padding:0px;">{{i}}</div>
+						{%endfor%}
+					</td>
+					<td>
+						{%for i in namelist%}
+						<div>{{i}}</div>
+						{%endfor%}
+					</td>
+					<td>
+						{%for i in forklist%}
+							<div>{{i}}</div>
+						 {%endfor%}
+					</td>
+					<td>
+						{%for i in watcherlist%}
+							<div>{{i}}</div>
+						 {%endfor%}
+					</td>
+					<td>
+						{%for i in starlist%}
+							<div>{{i}}</div>
+						{%endfor%}
+					</td>
+					<td>
+						{%for i in sizelist%}
+							<div>{{i}}</div>
+						{%endfor%}
+					</td>
+        		</tr>
+				</table>
+		<p id="side">
+		    <img src="{{img}}" width="150px" height="150px"><br><br>
+			NAME: {{n}}<br><br>
+			BIO: {{bio}}<br><br>
+			FOLLOWER: {{z3}}<br><br>
+			FOLLOWING: {{z2}}<br><br>
+		</p>
+
+	</div>
+	<div class="footer">
+		&copy; 2019 Abhishek
+	</div>
+
+
+</body>
+</html>
